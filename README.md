@@ -1,5 +1,9 @@
 ![header](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&text=GROUNDING%20FOUNDATION%20POSE&fontSize=20)
 
+## <div align=center>🎥 DEMO VIDEO</div>
+[![Demo Video](https://img.youtube.com/vi/ed0Y8_NYxaQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=ed0Y8_NYxaQ)
+*Click the image above to watch the demo video*
+
 ## <div align=left>REPO INFO</div>  
 - Hyundai Manufacturing Automation Project
 - ROS2 VISION BASED CONNECTOR POSE ESTIMATION & SEMANTIC SEGMENTATION  

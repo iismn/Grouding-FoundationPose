@@ -1,6 +1,6 @@
-# Hyundai-NGV : Ground and Track Arbitarily Vehicle Connector
+# Manufacturing Automation : Ground and Track Arbitrarily Vehicle Connector
 
-**[KAIST-IRIS Lab / Autnomous Platform Team](https://iris.kaist.ac.kr)**
+**[KAIST-IRIS Lab / Autonomous Platform Team](https://iris.kaist.ac.kr)**
 
 Sangmin Lee, Ph.D IRiS Lab / iismn@kaist.ac.kr  
 Handong Lee, M.S. IRiS Lab / hdong564@kaist.ac.kr
@@ -73,8 +73,8 @@ license agreement from NVIDIA CORPORATION is strictly prohibited.
 #### 1. Pull Docker Environmetn Image. Docker image contain all of neccesary package [Ubuntu, CUDA, ROS2, PyTorch, ...]
 
 ```bash
-docker pull iismn/env_hyundai_ngv:GrndSAM-2
-docker pull iismn/env_hyundai_ngv:FndPose
+docker pull iismn/env_manufacturing:GrndSAM-2
+docker pull iismn/env_manufacturing:FndPose
 ```
 #### 2. Generate docker container (Connector Segmentor, Pose Estimator) by
 2-A. Connector Segmentor
@@ -85,7 +85,7 @@ sudo docker run -it \
     --net=host \
     --ipc=host \
     --pid=host \
-    iismn/env_hyundai_ngv:GrndSAM-2
+    iismn/env_manufacturing:GrndSAM-2
 ```
 2-B. Connector Pose Estimator
 ```bash
@@ -106,7 +106,7 @@ sudo docker run -it \
     --net=host \
     --ipc=host \
     --pid=host \
-    iismn/env_hyundai_ngv:FndPose
+    iismn/env_manufacturing:FndPose
 ```
 
 ## <span style="color:yellow"> ROS2 Execution (DPT Sensor - Intel® RealSense L515) </span> 

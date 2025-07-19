@@ -5,7 +5,7 @@
 *Click the image above to watch the demo video*
 
 ## <div align=left>REPO INFO</div>  
-- Hyundai Manufacturing Automation Project
+- Manufacturing Automation Research Project
 - ROS2 VISION BASED CONNECTOR POSE ESTIMATION & SEMANTIC SEGMENTATION  
 
 ## <div align=left>REPO CONFIG</div>  

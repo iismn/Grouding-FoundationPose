@@ -1,8 +1,8 @@
-# Hyundai-NGV : Ground and Track Arbitarily Vehicle Connector
+# Manufacturing Automation : Ground and Track Arbitrarily Vehicle Connector
 
-**[KAIST-IRIS Lab / Autnomous Platform Team](https://iris.kaist.ac.kr)**  
+**[KAIST-IRIS Lab / Autonomous Platform Team](https://iris.kaist.ac.kr)**  
 Vision Team Leader: Sangmin Lee, Ph.D IRiS Lab / iismn@kaist.ac.kr  
-Teammate:Handong Lee, M.S. IRiS Lab / hdong564@kaist.ac.kr
+Teammate: Handong Lee, M.S. IRiS Lab / hdong564@kaist.ac.kr
 
 ## <span style="color:yellow"> Basic Highlights </span> 
 
@@ -74,8 +74,8 @@ license agreement from NVIDIA CORPORATION is strictly prohibited.
 #### 1. Pull Docker Environmetn Image. Docker image contain all of neccesary package [Ubuntu, CUDA, ROS2, PyTorch, ...]
 
 ```bash
-docker pull iismn/env_hyundai_ngv:GrndSAM-2
-docker pull iismn/env_hyundai_ngv:FndPose
+docker pull iismn/env_manufacturing:GrndSAM-2
+docker pull iismn/env_manufacturing:FndPose
 ```
 #### 2. Generate docker container (Connector Segmentor, Pose Estimator) by
 2-A. Connector Segmentor
@@ -97,7 +97,7 @@ sudo docker run -it \
     --net=host \
     --ipc=host \
     --pid=host \
-    iismn/env_hyundai_ngv:GrndSAM-2
+    iismn/env_manufacturing:GrndSAM-2
 ```
 2-B. Connector Pose Estimator
 ```bash
@@ -118,7 +118,7 @@ sudo docker run -it \
     --net=host \
     --ipc=host \
     --pid=host \
-    iismn/env_hyundai_ngv:FndPose
+    iismn/env_manufacturing:FndPose
 ```
 #### 3. Export ROS_WS Env Param to zsh
 At each container, you need to parameterize your folder directory as,
@@ -237,7 +237,7 @@ ros2 launch realsense_manage rs_multi_camera_mission_launch.py
 ```
 #### Tip. Edit Parameters
 You can edit parameters setting for detecting connector and text prompt in *_launch.py.  
-Please set **RealSense serial_no** correspond to *UR16 Manipulator*.
+Please set **RealSense serial_no** correspond to *Industrial Manipulator*.
 
   
 > ```rs_multi_camera_mission_launch.py``` Parameters
@@ -359,7 +359,7 @@ pose_estimator          # One-shot Connector Pose Estimator
 ```
 ### Trigger Topic:
 ```bash 
-/poseEstimation/trigger         # Trigger: UR16 - Alice / Bob (Female Connector / Male Connector)
+/poseEstimation/trigger         # Trigger: Robot Arm - Alice / Bob (Female Connector / Male Connector)
 /poseEstimation/triggerEnd      # Trigger: Bool - True / False (Pose Estimation Sequence Done / Not Done)
 ```
 *Trigger can test via following command:*

@@ -1,0 +1,57 @@
+# 체크포인트 파일들 제외
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.bin
+*.safetensors
+*.onnx
+
+# 모델 체크포인트 디렉토리
+checkpoints/
+weights/
+gdino_checkpoints/
+
+# 기타 대용량 파일들
+*.tar.gz
+*.tar.xz
+*.zip
+*.7z
+
+# Python 캐시
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE 및 에디터 파일
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS 생성 파일
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
